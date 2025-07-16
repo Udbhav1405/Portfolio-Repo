@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/e19f52097a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+       <!---- <img src="image/Logo.png4.jpg" class="logo">--->
+       <p>Udbhav</p>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Data Analytics</p>
+        <h1>Hi, I'm <span>Udbhav</span><br>Singh from Lucknow</h1>
+      </div>
+    </div>
+  </div>
+  <!------------------about---------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image/user.png2.jpg">
+        </div>
+         <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+  I am a dedicated and detail-oriented Data Analytics enthusiast currently pursuing a B.Tech degree. With hands-on experience in tools like Power BI, Excel, Sql and Python, I specialize in turning raw data into meaningful insights through visualization and dashboard creation. I am also skilled in using modern AI tools for content generation, automation, and presentation. My goal is to solve real-world problems using data and innovative technologies while continuously expanding my skill set.
+</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Data Analytics</span><br>Analysing Data <br>Visualisation<br>Creating Dashboard</li>
+              <li><span>AI Tools</span><br>Visualization <br>Presentaion <br>Content Creating</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Making Different Projects using Power Bi Excel Python</span><br>Dashboard,Reports</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2025</span><br> Pursuing Btech</li>
+              <li><span>2022</span><br>Intermediate from S.t Xavier's School</li>
+              <li><span>2020</span><br>High School from S.t Xavier's School</li>
+            </ul>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+<!------------------------Services------------->
+<div id="services">
+  <div class="container">
+      <h1 class="sub-title">My Services</h1>
+       <div class="services-list">
+    <div>
+         <i class="fa-solid fa-code"></i>
+        <h2>Dashboard Development</h2>
+        <p>Create interactive dashboards using Power BI and Excel.</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+      <i class="fa-solid fa-chart-line"></i>
+        <h2>Data Visualization</h2>
+        <p>Turn data into visuals that tell compelling stories.</p>
+         <a href="#">Learn more</a>
+    </div>
+    <div>
+      <i class="fab fa-app-store"></i>
+        <h2>AI Tool Integration</h2>
+        <p>Utilize modern AI tools for content generation and automation.</p>
+         <a href="#">Learn more</a>
+      </div>
+</div>
+        </div>
+      </div>
+    <!--------------------portfolio----------  -->
+     <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+
+        </div> 
+      </div>
+     </div>
+    <!---------------------contact----------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <br>
+            <h2>Let's Talk</h2>
+            <h5>I'm currently available to join a company to work on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</h5>
+            <p><i class="fa-solid fa-paper-plane"></i>udbhavsingh1405@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>8528190864</p>
+            <p><i class="fa-solid fa-location-dot"></i>Lucknow,Uttar Pradesh</p>
+            <div class="social-icons">
+             <a href="https://x.com/UdbhavS19178893?t=XWBiHukYbuS6GHYlYfCuEw&s=09"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/_udbhavsingh_?igsh=aGpwcTNqNGdxNm9n"><i class="fa-brands fa-instagram"></i></a> 
+               <a href="https://www.linkedin.com/in/udbhav-singh-028277258"><i class="fa-brands fa-linkedin"></i></a>  
+            </div>
+
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Enter Your Name" required>
+              <input type="email" name="email" placeholder="Enter Your email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @2025<i class="fa-solid fa-heart"></i> Udbhav Singh</p>
+      </div>
+    </div>
+
+
+
+
+
+  <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents")   
+      
+      function opentab(tabname){
+    for(let tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(let tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    
+  </script>
+
+  <script>
+
+     var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+          sidemenu.style.right = "0";
+     }
+     function closemenu(){
+         sidemenu.style.right = "-200px"
+     }
+
+  </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwHKGQsBlvuoTqRRb-F9yf_tOc_RS11Pc0fJnW9OY9NkmsnEeMzXQiJybgw_TJNuan6/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+             msg.innerHTML = ""
+          },5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+
+</body>
+</html>
