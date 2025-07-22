@@ -1,7 +1,7 @@
 🌐 Personal Portfolio Website
+<br>
 This is a responsive Personal Portfolio Website built with HTML, CSS, and JavaScript. It showcases your professional profile, skills, projects, services, and contact information — all in one place.
 
-🔗 Live Preview
 
 📌 Features
 Responsive Design – Looks great on all screen sizes.
@@ -28,6 +28,7 @@ Google Fonts & Font Awesome
 Google Apps Script (for form submission)
 
 💼 Sections Overview
+<br>
 Section	Description
 Home	Intro with name, title, and greeting
 About	Summary of experience, skills, and education
@@ -36,4 +37,5 @@ Portfolio	Projects like Portfolio, Text Summarizer with GitHub links
 Contact	Email, phone, social links, and contact form
 
 🙋‍♂️ Author
+<br>
 Udbhav Singh
