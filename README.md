@@ -4,6 +4,7 @@ This is a responsive Personal Portfolio Website built with HTML, CSS, and JavaSc
 
 
 📌 Features
+<br>
 Responsive Design – Looks great on all screen sizes.
 
 About Me Section – Includes skills, education, and experience.
@@ -17,6 +18,7 @@ Contact Form – Submits form data via Google Apps Script.
 Modern UI/UX – Clean and interactive design with hover effects and transitions.
 
 🛠️ Built With
+<br>
 HTML5
 
 CSS3
