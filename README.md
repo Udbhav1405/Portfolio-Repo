@@ -1,6 +1,6 @@
 🌐 Personal Portfolio Website
 <br>
-This is a responsive Personal Portfolio Website built with HTML, CSS, and JavaScript. It showcases your professional profile, skills, projects, services, and contact information — all in one place.
+This is a responsive Personal Portfolio Website built with HTML, CSS, and JavaScript. It showcases professional profile, skills, projects, services, and contact information — all in one place.
 
 
 📌 Features
